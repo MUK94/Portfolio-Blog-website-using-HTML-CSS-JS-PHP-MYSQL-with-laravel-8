@@ -1,6 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Portfolio-Blog-website-using-HTML-CSS-JS-PHP-MYSQL-with-laravel-8
+# You make sure you update the database credentials
+# Change the name of the database
+# Change the username
+# change the password
+# In case of any question reach me via my blog: www.mouctechy.com 
+
+
 =======
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
