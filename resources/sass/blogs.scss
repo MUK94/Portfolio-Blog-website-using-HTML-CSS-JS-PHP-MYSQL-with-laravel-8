@@ -1,0 +1,309 @@
+// Variables
+@import 'variables';
+
+// Css
+
+.msg-success{
+    margin: -6rem 18rem 0 18rem;
+    text-align: center;
+    padding-top: 0.75rem;
+    font-size: 1.1rem;
+    background-color: green;
+}
+.msg-error{
+    text-align: center;
+    margin: 0 18rem;
+    padding-top: 0.75rem;
+    font-size: 1.1rem;
+    background-color: rgb(255, 0, 0);
+}
+.blog-row{
+    margin-top: -1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    
+}
+.blog-header{
+    padding-bottom: 2rem;
+}
+.blog-row .blog-header p{
+    color: $itemColor;
+    text-align: center;
+    margin-top: -1.75rem;
+    font-size: 0.75rem;
+}
+.blog-row .blog-container{
+    margin: 1rem;
+}
+
+// ---BLOG POST CONTAINER
+
+.blog-row article{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.blog-row .article-box{
+    padding: 1rem;
+    margin:4rem 0.75rem 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    min-height: 250px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgb(172, 170, 170) ;
+}
+.blog-row .article-box .blog-img-title{
+    display: flex;
+   // flex-wrap: wrap;
+}
+.blog-row article a{
+    text-decoration: none;
+    color: $itemColor;
+}
+.blog-row article a img{
+    width: 200px;
+    height: 140px;
+    margin: 1rem;
+}
+.blog-row .article-box .blog-img-title .blog-title{
+    font-size: 1.6rem;
+    padding: 0.25rem;
+}
+.blog-row .article-box .blog-img-title .blog-title small{
+    font-size:small;
+}
+
+// show post ---- // edit post ---- // delete post --
+
+.blog-row .blog-show{
+    margin: 0 10rem;
+}
+.btn-edit-delete{
+    display: flex;
+    padding: 0.5rem 0;
+    justify-content: space-between;
+}
+.blog-row .blog-show button, 
+.blog-row .btn-delete-right, 
+.blog-row input[type=submit], 
+.container .card-body .btn-edit-delete .btn-add, 
+.blog-row table tr a{
+    background: $logoColor;
+    padding: 0.25rem 1rem;
+    font-size: $fontItem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+}
+.blog-row .blog-show button:hover, 
+.blog-row input[type=submit]:hover, 
+.blog-row table tr a:hover{
+    letter-spacing: 3px;
+}
+.blog-row .blog-show button a{
+    text-decoration: none;
+    color: $itemColor;
+}
+.blog-row .blog-show h1{
+    margin: 2rem 0;
+    text-align: center;
+}
+.blog-row .blog-show p, .blog-row .blog-show li{
+    text-align: justify;
+    font-size: 1rem;
+}
+.blog-row .blog-show .row-img-col{
+    padding: 1.5rem 0; 
+}
+.blog-row .blog-show .row-img-col img{
+    width: 100%;
+}
+.blog-row .btn-delete-right{
+    float: right;
+}
+.blog-row .comment-section{
+    padding: 0.75rem 0;
+}
+.blog-row .small-tag{
+    padding: 0.75rem 0;
+}
+.blog-row .small-tag .img-tag-show{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.blog-row .small-tag .img-tag-show small{
+    padding-bottom: 0.25rem;
+}
+
+// --- create post
+
+.blog-row label{
+    font-size: $fontItem;
+}
+.blog-row .create-post-input .edit-input{
+    width: 100%;
+    height: 40px;
+    margin: 0.75rem 0;
+}
+.blog-row .create-post-body .form-message{
+    width: 100%;
+    resize: none;
+}
+
+// --- Add post btn
+
+.container .card-body .btn-edit-delete button{
+    border: none;
+    margin: 0.75rem 0;
+}
+.container .card-body .btn-edit-delete button a{
+    text-decoration: none;
+    color: $itemColor;
+}
+.container .card-body .btn-edit-delete button a:hover{
+    letter-spacing: 5px;
+}
+// Share btn
+
+.share-btn{
+    display: flex;
+    margin: 0 0.5rem;
+}
+
+// home blade = dashboard
+
+.blog-row table{
+    color: $itemColor;
+    padding: 2rem 0;
+    text-align: justify;
+}
+.blog-row table tr th{
+    padding: 1rem 0;
+    font-weight: 400;
+}
+.blog-row table tr .title{
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 500;
+}
+.blog-row table tr a{
+    margin: 0 10rem; 
+    text-decoration: none;
+    color: $itemColor;
+}
+.welcome-section{
+    display: flex;
+}
+.welcome-section .welcome-text{
+    padding: 9rem 0 0 6rem;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+.welcome-section .welcome-text h3{
+    font-size: 1.6rem;
+    padding:1.25rem 0;
+}
+.welcome-section .welcome-text p{
+    font-size: $fontItem;
+}
+.welcome-section .welcome-text a{
+    margin-top: 2.5rem;
+    text-decoration: none;
+    color: $itemColor;
+    transition: 0.5s;
+}
+.welcome-section .welcome-text a span{
+    padding: 0.3rem;
+    background-color: $logoColor;
+    border-radius: 5px;
+}
+.welcome-section .welcome-text a:hover{
+    letter-spacing: 2px;
+}
+
+// media queries
+//dashboard
+
+@media (max-width:1400px){
+    .welcome-section img{
+        width: 40%;
+    }
+    .welcome-section .welcome-text{
+        padding: 3rem 0 0 1.25rem;
+    }
+    .welcome-section .welcome-text a{
+        margin-top: .5rem;
+    }
+}
+@media (max-width: 1170px){
+    .blog-row table tr th {
+        padding: 1rem 0;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .blog-row table tr a {
+        margin: 0 0.15rem;
+    }
+}
+@media (max-width:500px){
+    .welcome-section{
+        flex-wrap: wrap;
+    }
+    .welcome-section img{
+        width: 100%;
+    }
+    .welcome-section .welcome-text h3{
+        font-size: 1.2rem;
+        padding:1.25rem 0;
+        text-align: center;
+    }
+    .welcome-section .welcome-text p,
+    .welcome-section .welcome-text a{
+        font-size: 1rem;
+    }
+}
+ 
+// blog show
+
+@media (max-width:890px){
+
+    .blog-row .blog-show {
+        margin: 0 0.75rem;
+    }
+    .blog-row .blog-show h1 {
+        margin: 1.25rem 0;
+        text-align: left;
+        font-size: 1.4rem;
+    }
+    .blog-row .blog-show .row-img-col img{
+        height: 100%;
+    }
+    .welcome-section .welcome-text{
+        padding: 1rem 0 0 0.25rem;
+    }
+}
+
+// blog index
+
+@media (max-width:600px){
+    .blog-row .article-box .blog-img-title{
+       flex-wrap: wrap;
+    }
+    .blog-row article a img {
+        width: 100%;
+        margin: 0.25rem;
+        height: 30vh;
+    }
+    .blog-row article a p {
+        font-size: 1.1rem;
+    }
+}
+
+// dashboard media queries
+

@@ -1,0 +1,608 @@
+.portfolio-content {
+  margin-top: -5rem;
+  letter-spacing: 1px;
+}
+
+.heading {
+  text-align: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.heading span {
+  color: #09d1d1;
+}
+
+.experience .row {
+  display: flex;
+  justify-content: center;
+}
+
+.experience .row .counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience .row .counter i {
+  font-size: 3rem;
+  padding: 1.5rem;
+  margin-top: -2rem;
+  color: #111;
+}
+
+.experience .row .counter .box {
+  width: 100%;
+  height: 240px;
+  background: #d1d1d1;
+  padding: 2.75rem;
+  margin: 2.5rem 4rem;
+  text-align: center;
+  color: #111;
+  font-size: 1.2rem;
+  border-radius: 50% 1%;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0px 10px 15px 0px #acaaaa;
+}
+
+.experience .row .counter .box:hover {
+  transform: scale(1.1);
+}
+
+.experience .row .counter .box h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.experience .download-cv button {
+  color: white;
+  background: #535252;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.experience .download-cv button:hover {
+  letter-spacing: 4px;
+}
+
+.experience .download-cv button i {
+  color: #050c0c;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.education {
+  margin-top: 10rem;
+}
+
+.education .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.education .box-container .box {
+  width: 33.33%;
+  height: 250px;
+  margin: 2.5rem 0;
+  padding: 2rem 1rem;
+  border-left: 0.2rem solid #111;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 10px 15px 0px #acaaaa;
+}
+
+.education .box-container .box span {
+  font-size: 1.2rem;
+  background: #09d1d1;
+  color: #111;
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.education .box-container .box h3 {
+  font-size: 1.2rem;
+  color: #111;
+  padding-top: 2.5rem;
+}
+
+.education .box-container .box p {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.education .box-container .box i {
+  position: absolute;
+  top: -1.5rem;
+  left: -2.6rem;
+  height: 6rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.skills .skills-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.skills .container-row {
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+}
+
+.skills .container-row h2 {
+  padding: 1rem 0;
+}
+
+.skills .container-row .skills-row, .skills .container-row .soft-skills {
+  margin: 1em 0;
+  position: relative;
+  width: 40rem;
+}
+
+.skills .container-row .skills-row .skill-title {
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.145rem;
+  text-transform: uppercase;
+}
+
+.skill__outer-bar, .skill__inner-bar {
+  height: 0.7rem;
+}
+
+.skills .container-row .skills-row .skill__outer-bar {
+  margin-top: 1rem;
+  background: #141313;
+}
+
+.skills .container-row .skills-row .skill__inner-bar {
+  -webkit-animation: fillBar 1s forwards;
+          animation: fillBar 1s forwards;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.skill__inner-bar--100 {
+  width: 100%;
+  background: #09d1d1;
+}
+
+.skill__inner-bar--95 {
+  width: 95%;
+  background: #09d1d1;
+}
+
+.skill__inner-bar--80 {
+  width: 80%;
+  background: #09d1d1;
+}
+
+.skill__inner-bar--75 {
+  width: 75%;
+  background: #09d1d1;
+}
+
+.skill__inner-bar--70 {
+  width: 70%;
+  background: #09d1d1;
+}
+
+.skill__inner-bar--65 {
+  width: 65%;
+  background: #09d1d1;
+}
+
+.skill__inner-bar--60 {
+  width: 60%;
+  background: #09d1d1;
+}
+
+.skill__inner-bar--55 {
+  width: 55%;
+  background: #09d1d1;
+}
+
+@-webkit-keyframes fillBar {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fillBar {
+  to {
+    transform: scaleX(1);
+  }
+}
+.container-row .soft-box {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.145rem;
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+}
+
+.container-row .soft-box .soft-skills {
+  margin-bottom: 0.25rem;
+  width: 12rem;
+  height: 120px;
+  border-radius: 1.2rem;
+  background: #d1d1d1;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: 0 1rem 4rem 0 #504d4d;
+  cursor: pointer;
+}
+
+.container-row .soft-box .soft-skills:hover {
+  transform: scale(1.1);
+}
+
+.container-row .soft-box .soft-skills p {
+  margin-bottom: 0.1rem;
+}
+
+.progress_inner, .progress_outer_box {
+  height: 55px;
+  margin: 1rem 4.8rem;
+}
+
+.progress_outer_box {
+  background: #141313;
+}
+
+.progress_inner {
+  -webkit-animation: fillBar 1s forwards;
+          animation: fillBar 1s forwards;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+}
+
+.progress_outer_box--85 {
+  height: 78px;
+  background: #09d1d1;
+}
+
+.progress_outer_box--75 {
+  height: 68px;
+  background: #09d1d1;
+}
+
+.progress_outer_box--100 {
+  height: 89px;
+  background: #09d1d1;
+}
+
+@keyframes fillBar {
+  to {
+    transform: scaleY(1);
+  }
+}
+.portfolio, .skills {
+  margin-top: 10rem;
+}
+
+.portfolio .box-container-portfolio {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.portfolio .portfolio-content {
+  padding: 1rem;
+  margin: 4rem 0.75rem 0 0;
+  display: flex;
+  width: 560px;
+  cursor: pointer;
+  box-shadow: 0px 10px 15px 0px #acaaaa;
+}
+
+.portfolio .box-image {
+  width: 280px;
+}
+
+.portfolio .portfolio-text-box {
+  width: 280px;
+  margin: 0 0.75rem;
+}
+
+.portfolio .portfolio-text-box h4 {
+  font-size: 1.75rem;
+}
+
+.portfolio .box-image img {
+  width: 250px;
+  height: 180px;
+}
+
+.portfolio button {
+  margin: 1.25rem 0;
+  padding: 0.25rem;
+  color: white;
+  background: #09d1d1;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: none;
+}
+
+.portfolio button a {
+  color: #111;
+  text-decoration: none;
+}
+
+.portfolio button a:hover {
+  letter-spacing: 2px;
+}
+
+.service-container {
+  letter-spacing: 1px;
+  margin: 4rem 0.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-container .service-col {
+  background: #d1d1d1;
+  height: 380px;
+  width: 100%;
+  margin: 0.25rem 0.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0.25rem 1rem 3rem 0.25rem #d1cfcf;
+  cursor: pointer;
+}
+
+.service-container .service-icon {
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 3.5rem;
+}
+
+.service-container .service-icon i {
+  padding: 1.5rem;
+}
+
+.service-container h3 {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+.service-container .service-box-list {
+  list-style: none;
+  padding: 0.25rem 3.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.service-container .service-box-list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #09d1d1;
+}
+
+@media (max-width: 1340px) {
+  .portfolio-content {
+    margin-top: -2rem;
+  }
+
+  .heading {
+    font-size: 1.7rem;
+  }
+
+  .experience .row .counter .box {
+    height: 210px;
+    padding: 2.5rem;
+    margin: 2.5rem 3rem;
+    font-size: 1rem;
+  }
+
+  .education {
+    margin-top: 4rem;
+  }
+
+  .education .box-container .box h3 {
+    font-size: 1rem;
+    padding-top: 2.3rem;
+  }
+
+  .education .box-container .box p {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+
+  .portfolio, .skills {
+    margin-top: 3rem;
+  }
+
+  .skills .container-row {
+    padding: 1rem;
+  }
+
+  .skills .skills-container {
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .container-row .soft-box .soft-skills {
+    margin: 0.75rem;
+    width: 200px;
+    height: unset;
+  }
+
+  .service-container h3 {
+    margin: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .service-container .service-icon {
+    margin: 1rem;
+    font-size: 2.8rem;
+  }
+
+  .service-container .service-box-list {
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 860px) {
+  .portfolio-content {
+    margin-top: 1rem;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  .education .box-container {
+    margin-left: 1rem;
+  }
+
+  .education .box-container .box {
+    width: 50%;
+  }
+
+  .education .box-container .box span {
+    font-size: 1rem;
+  }
+
+  .experience .download-cv button {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .skills .container-row .skills-row {
+    width: 200%;
+  }
+
+  .service-container {
+    flex-wrap: wrap;
+  }
+
+  .service-container .service-col {
+    width: 330px;
+    margin-bottom: 1rem;
+  }
+
+  .service-container .service-icon {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 580px) {
+  .heading {
+    margin: 0;
+  }
+
+  .experience .row .counter {
+    flex-wrap: wrap;
+  }
+
+  .experience .row .counter .box {
+    height: 180px;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .experience .row .counter i {
+    font-size: 2rem;
+    padding: 1.2rem;
+    margin-top: -1rem;
+  }
+
+  .education .box-container .box {
+    width: 80%;
+  }
+
+  .portfolio, .skills, .services {
+    margin-top: 1.5rem;
+  }
+
+  .portfolio .portfolio-content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .portfolio .box-image {
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+
+  .portfolio .box-image img {
+    width: 100%;
+    height: 170px;
+  }
+
+  .portfolio .portfolio-text-box h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio .portfolio-text-box p {
+    font-size: 0.9rem;
+  }
+
+  .portfolio button {
+    font-size: 0.85rem;
+  }
+
+  .skills .container-row h2 {
+    font-size: 1.1rem;
+  }
+
+  .skills .container-row .skills-row {
+    width: 250%;
+  }
+}
+@media (max-width: 364px) {
+  header .logo {
+    font-size: 1.1rem;
+  }
+
+  header .logo span {
+    font-size: 1.3rem;
+  }
+
+  header .navigation li, header .navigation1 li, header .navigation2 li {
+    margin-left: 1rem;
+  }
+
+  header, .page-content, .footer-content {
+    padding: 0.1rem;
+  }
+
+  .heading {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .education .box-container .box {
+    width: 100%;
+    height: unset;
+  }
+
+  .education .box-container .box span {
+    font-size: 0.9rem;
+  }
+
+  .skills .container-row .skills-row {
+    width: 160%;
+  }
+
+  .footer-bottom p {
+    font-size: 0.7em;
+  }
+}

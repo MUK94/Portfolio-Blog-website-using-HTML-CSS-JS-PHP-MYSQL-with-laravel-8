@@ -1,0 +1,121 @@
+// --- User Login / Logout / Register -----
+
+
+// Variables
+@import 'variables';
+
+//--- CSS---
+
+.container-login{
+    margin-top: -1.25rem;
+    letter-spacing: 1px;
+    align-items: center;
+    margin-left: 18rem;
+    margin-right: 18rem;
+    background: $cardBodyBackground;
+    border-radius: 5px;
+   // border: 1px solid $itemColor;
+}
+
+.card-title{
+    font-size: $fontTitle;
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+    
+}
+.card-body{
+    font-size: $fontBody;
+}
+.form-row{
+    padding: 0.25rem;
+}
+
+.form-row .col-offset{
+   margin-top: 1rem;
+}
+
+.row-center .card .card-body .col-md-6 input[type=text], 
+.row-center .card .card-body .col-md-6 input[type=email], 
+.row-center .card .card-body .col-md-6 input[type=password] {
+    width:100%;
+    padding: 12px 18px;
+    margin: 1.2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: $fontInput;
+}
+
+.form-row .col-offset button{
+    font-size: $fontInput;
+    padding: 0 1.25rem;
+    height: 35px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    background: $logoColor;
+    border: none;
+    border-radius: 3px;
+}
+.form-row .col-offset button:hover{
+    letter-spacing: 5px;
+}
+
+.form-row .col-offset .btn-link {
+    margin: 0 6.5rem;
+}
+.form-row .col-offset a{
+    color: $forgotPwdColor;
+    font-size: $fontforgotPwd;
+    padding-top: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+.invalid-feedback span{
+    color: $invalidfeedbackcolor;
+    font-size: $invalidfeedbackfont;
+}
+
+// media queries
+
+@media(max-width:1500px){
+    .container-login {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media(max-width:730px){
+    .container-login {
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .card-title {
+        font-size: 1.4rem;
+    }
+    .form-row .col-offset {
+        margin: 0;
+    }
+    .form-row .col-offset button {
+        font-size: 0.8rem;
+    }
+    .row-center .card .card-body .col-md-6 input[type=text], 
+    .row-center .card .card-body .col-md-6 input[type=email], 
+    .row-center .card .card-body .col-md-6 input[type=password] {
+    font-size: 0.75rem;   
+    }
+    .form-row .col-offset  .form-check label{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width:460px){
+    .form-row .form-pwd-log{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form-row .col-offset .btn-link {
+        margin: 0.75rem 0.23rem;
+    }
+}
+ 

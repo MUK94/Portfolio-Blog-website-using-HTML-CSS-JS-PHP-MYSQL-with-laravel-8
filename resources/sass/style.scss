@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+// Variables
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position: fixed;
+    background: $headerBackground;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: $padSize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    height: 10vh;
+}
+
+header .logo {
+    color: $itemColor;
+    font-weight: 700;
+    font-size: $logoFont;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: $logoColor;
+    font-size: 2.1rem;
+}
+
+header .navigation, 
+header .navigation1, 
+header .navigation2{
+  position: relative;
+  display: flex;
+}
+header .navigation2{
+    padding: 0 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+header .navigation2 .drop-inline {
+    display: flex;
+}
+header .navigation2 .dropbtn{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+header .navigation2 .dropbtn i, 
+header .navigation2 .dropdown i{
+    padding: 0 0.25rem;
+}
+header .navigation2 .dropdown{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: auto;
+    z-index: 1;
+    border-radius: 15px;
+}
+header .navigation2 .dropdown a{
+    color: $itemColor;
+    display: block;
+    padding: 0.75rem;
+}
+header .navigation2:hover .dropdown{
+    display: block;
+}
+header .navigation li, 
+header .navigation1 li, 
+header .navigation2 li{
+  list-style: none;
+  margin-left: 25px;
+}
+
+header .navigation li a, 
+header .navigation1 li a, 
+header .navigation2 li a {
+    text-decoration: none;
+    color: $itemColor;
+    font-weight: 400;
+    font-size: $fontItem;
+}
+
+header .navigation li a:hover, 
+header .navigation1 li a:hover,  
+header .navigation2 li a:hover {
+    color: $logoColor;
+}
+.page-content{
+    padding: $padSize;
+}
+// ---- intro
+
+.about-box {
+    margin-top: $mrgTop;
+    letter-spacing: 2px;
+}
+.rowabout {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.rowabout .col50about1 {
+    position: relative;
+    width: 130%;
+}
+.rowabout .col50about2 {
+    position: relative;
+    width: 70%;
+}
+.rowabout .col50about1 h2 {
+    color: $headerBackground;
+    font-size: $fontAboutTitle ;
+    font-weight: $fontWeightTitle;
+    margin-top: $marginTitle;
+    padding-bottom: $marginBtTitle;
+}
+.rowabout .col50about1 h3{
+    font-size: $h3fontSize;
+}
+.about-box .rowabout p{
+    font-size: $paraFontSize;
+    margin-top: $paraMrgTop;
+}
+.rowabout .col50about1 a {
+    color: $itemColor;
+    background: $logoColor;
+    font-size: $paraFontSize ;
+    display: inline-block;
+    padding: $padBtn;
+    margin-top: $paraMrgTop;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+  .rowabout .col50about1 a:hover {
+    letter-spacing: 4px;
+}
+.rowabout .col50about2 .imgBxabout {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.rowabout .col50about2 .imgBxabout img {
+    position: relative;
+    margin-top: $marginImg;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    border: 2px solid rgba(128, 128, 128, 0.199);
+    border-radius: 50% 1%;
+}
+
+// social media links
+
+.wrapper {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 7%;
+}
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    margin: 0 5px;
+    background: $btnBackground;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px $boxShadowColor;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover {
+    width: 200px;
+}
+.wrapper .button .icon {
+    display: inline-block;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon {
+    background: $nth-child-1;
+}
+.wrapper .button:nth-child(2):hover .icon {
+background: $nth-child-2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+background: $nth-child-3;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+background: $nth-child-4;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+background: $nth-child-5;
+}
+.wrapper .button a:link {
+text-decoration: none;
+}
+.wrapper .button i {
+color: $itemColor;
+}
+.wrapper .button .icon i {
+font-size: 1.75rem;
+line-height: 60px;
+transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i {
+color: $headerBackground;
+}
+.wrapper .button span {
+font-size: 20px;
+font-weight: 400;
+line-height: 60px;
+margin-left: 10px;
+transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span {
+color: $nth-child-1;
+}
+.wrapper .button:nth-child(2) span {
+color: $nth-child-2;
+}
+.wrapper .button:nth-child(3) span {
+color: $nth-child-3;
+}
+.wrapper .button:nth-child(4) span {
+color: $nth-child-4;
+}
+.wrapper .button:nth-child(5) span {
+color: $nth-child-5;
+}
+
+//---- footer
+
+footer {
+    position: relative;
+    background-color: $footerbckgrd ;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding-top: $footerPad;
+    color: $headerBackground;
+}
+.footer-content{
+    display: flex;
+    padding: $padSize;
+    justify-content: space-between;
+}
+.footer-content h3{
+    margin-top: $footerHeaderMrgTop;
+    font-weight: $footerHeaderWeight;
+    font-size: $footerHeaderfontSize;
+    //line-height: 28px;
+}
+.footer-content h3 span {
+    color: $logoColor;
+}
+.footer-box {
+    height: $footerHeight;
+}
+.footer-box ul {
+    list-style: none;
+    margin-top: $listMrgTop;
+}
+.footer-box ul li{
+    margin: $listItemMrg;
+}
+.footer-box p{
+    display: inline-block;
+}
+.footer-box p{
+    color: $headerBackground ;
+}
+.footer-box ul a {
+    text-decoration: none;
+    padding-top: $linkPadTop;
+    font-size: $footerLinkfontSize;
+}
+.footer-box ul a i {
+    display: flex;
+    color: $headerBackground ;
+    margin: $linkPadTop;
+}
+.footer-box ul p {
+    margin: $paraMrg;
+    font-weight: $footerItemWeight;
+}
+.footer-content .social-link1,
+.footer-content .social-link2 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-content .social-link3 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer-bottom {
+    border-top: 1px solid #fff;
+    height: 30px;
+    background-color: $itemColor;
+    margin-top: 4rem;
+}
+.footer-bottom p {
+    color: $headerBackground;
+    text-align: center;
+    font-weight: $footerItemWeight;
+    font-size: 0.8em;
+    padding-top: $linkPadTop;
+    letter-spacing: 2px;
+}
+.footer-bottom p a {
+    text-decoration: none;
+    color: $logoColor;
+}
+//----------/// responsiveness
+
+
+// start for big screens smaller or equal to 1400px
+
+@media (max-width : 1400px) {
+    header .navigation1{
+        display: none;
+    }
+    header, .page-content, 
+    .footer-content{
+        padding: 2.5rem 9rem;
+    }
+}
+
+
+// end or big screens smaller or equal to 1400px
+
+// start for meduim screens smaller or equal to 1180px
+
+@media (max-width : 1180px) {
+    header, .page-content, 
+    .footer-content{
+        padding: 2.5rem 5rem;
+    }
+    .rowabout .col50about1 h2 {
+        color: black;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: -0.5rem;
+        padding-bottom: 1rem;
+    }
+    .rowabout .col50about1 h3 {
+        font-size: 1.2rem;
+    }
+    .about-box .rowabout p {
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
+    .rowabout .col50about1 a {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+    }
+    .rowabout .col50about2 .imgBxabout img {
+        margin-top: -2rem;
+    }
+    .wrapper {
+        padding: 15px 0;
+        margin-bottom: 4%; 
+    }
+    .wrapper .button {
+        height: $buttonWidthHeight;
+        width: $buttonWidthHeight;
+        border-radius: 40px;
+    }
+    .wrapper .button .icon {
+        height: $buttonWidthHeight;
+        width: $buttonWidthHeight;
+        line-height: $buttonWidthHeight;
+    }
+    .wrapper .button .icon i {
+        font-size: 1.5rem;
+        line-height: $buttonWidthHeight;
+    }
+}
+
+// end for big screens smaller or equal to 1180px
+
+// start for small screens smaller or equal to 950px
+
+@media (max-width : 950px) {
+    header, .page-content, 
+    .footer-content{
+        padding: 1.5rem;
+    }
+    header .navigation, 
+    header .navigation1{
+        display: none;
+    }
+    header .navigation.active{
+        display: flex;
+        width: 100%;
+        height: 70%;
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $footerbckgrd;
+    }
+    header .navigation li{
+        margin-left: 0;
+        margin-bottom: 0.85rem;
+    }
+    header .navigation li a{
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+    }
+    .menuToggle{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30px;
+        cursor: pointer;
+        order: 1;
+    }
+    .menuToggle span{
+        width: 35px;
+        height: 5px;
+        background-color: black;
+    }
+    .menuToggle.active{
+        background-size: 30px;
+    }
+    header .navigation2 {
+        margin-left: 26rem;
+    }
+}
+
+// end for small screens smaller or equal to 950px
+
+@media (max-width : 840px) {
+    header, .page-content, 
+    .footer-content{
+        padding: .75rem;
+    }
+    header .logo {
+        font-size: 1.3rem;
+    }
+    header .logo span {
+        font-size: 1.7rem;
+    }
+    header .navigation li a {
+        font-size: 0.9rem;
+    }
+    header .navigation2 {
+        margin-left: 20rem;
+    }
+    header .navigation2 .dropbtn {
+        font-size: 1.4rem;
+        padding: unset;
+    }
+    header .navigation2 .dropdown a {
+        padding: 0.45rem;
+        font-size: 0.8rem;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+    }
+    .footer-box {
+        height: unset;
+    }
+    .footer-box ul a {
+        font-size: 1rem;
+    }
+}
+@media (max-width : 600px) {
+    header .navigation2 {
+        margin-left: 8rem;
+    }
+    
+    .about-box {
+        margin-top: 1.5rem; 
+        letter-spacing: 1px;
+        margin-bottom: 3rem;
+    }
+    .rowabout .col50about1 h2 {
+        font-size: 1.75rem;
+        font-weight: 500; 
+        margin-top: 0.5rem;
+    }
+    .rowabout .col50about1 h3 {
+        font-size: 1rem;
+    }
+    .rowabout .col50about2 .imgBxabout img {
+        margin-top: 0.5rem;
+    }
+    .wrapper .button .icon i {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width : 410px) {
+    header .navigation2 {
+        margin-left: 2rem;
+    }
+    header .navigation2 .drop-inline i {
+        font-size: 1.4rem;
+    }
+    .rowabout {
+        flex-wrap: wrap;
+    }
+    .rowabout .col50about2 .imgBxabout img {
+        margin-top: 1.5rem;
+        width: 80%;
+        height: 90%;
+    }
+    .footer-bottom p {
+        letter-spacing: unset;
+    }
+    .footer-content h3 {
+        margin-top: 0; 
+        font-size: 1.2rem;
+    }
+    .footer-box{
+        margin-top: 1rem;
+    }
+    .footer-box ul {
+        margin-top: 0;
+    }
+    .footer-box ul a {
+        font-size: 0.8rem;
+    }
+}
