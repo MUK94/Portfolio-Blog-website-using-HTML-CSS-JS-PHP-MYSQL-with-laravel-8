@@ -1,11 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-# Portfolio-Blog-website-using-HTML-CSS-JS-PHP-MYSQL-with-laravel-8
-# You make sure you update the database credentials
-# Change the name of the database
-# Change the username
-# change the password
-# In case of any question reach me via my blog: www.mouctechy.com 
+#Portfolio-Blog-website-using-HTML-CSS-JS-PHP-MYSQL-with-laravel-8
+You make sure you update the database credentials
+Change the name of the database
+Change the username
+change the password
+In case of any question reach me via my blog: www.mouctechy.com 
 
 
 =======
