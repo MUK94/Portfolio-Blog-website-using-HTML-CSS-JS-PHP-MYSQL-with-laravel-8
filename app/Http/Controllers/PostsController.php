@@ -105,7 +105,7 @@ class PostsController extends Controller
     {   
         $post = Post::find($id); 
 
-        if(auth()->user()->name !==  "#@m@dou20_22_!?#"){
+        if(auth()->user()->name !==  "useradmin"){
             return redirect('/posts')->with('error', 'Unauthorized page');
         }
         return view('posts.edit')->with('post', $post);
