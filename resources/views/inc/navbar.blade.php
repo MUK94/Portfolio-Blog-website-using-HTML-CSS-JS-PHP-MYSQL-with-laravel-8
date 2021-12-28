@@ -40,7 +40,7 @@
                 
                     <div class="dropdown">
 
-                        @if (Auth::user()->name == "#@m@dou20_22_!?#")
+                        @if (Auth::user()->name == "useradmin")
                             <a href="/home">Dashboard</a>
                         @endif
                         
