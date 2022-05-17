@@ -18,7 +18,7 @@
                     <!--create post--> 
                      
                     <!--Only for admins-->
-                    @if(Auth::user()->name == "#@m@dou20_22_!?#")
+                    @if(Auth::user()->name == "")
                         <div class="btn-edit-delete">
                             <button>
                                 <a href="/posts/create" class="btn-add">Add Post</a>
